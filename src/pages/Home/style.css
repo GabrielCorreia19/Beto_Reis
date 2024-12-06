@@ -8,11 +8,12 @@
     width: 100vw; */
 }
 
-.header-img {
+.header-perfil {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 80%;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
     margin-top: 2rem;
 
     .section-img {
@@ -28,14 +29,13 @@
         }
     }
 
-.section-name {
+.section-column {
     display: flex;
     flex-direction: column;
 
     h3 {
         color: #fff;
-        font-size: 2rem;
-        height: 5px;
+        height: 5px
     }
 
     span {
@@ -43,6 +43,7 @@
         font-size: 1rem;
     }
 }
+
 
 }
 
