@@ -1,11 +1,16 @@
 import React, { useEffect } from "react";
 import "./style.css";
 import { MdVerified } from "react-icons/md";
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';  // Importe o useNavigate
 
 
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const navigateToPlanos = () => {
+    navigate('/planos'); 
+  };
   return (
     <div className="home">
       <div className="header-perfil">
@@ -23,31 +28,66 @@ export default function Home() {
 
       </div>
 
-      <div className="card-cursos">
-        <Link to="/planos">
-        <img
-          src="https://nwbcompany.com.br/wp-content/webp-express/webp-images/uploads/2024/09/LINK-BIO-NWB-OPEN-HOUSE.png.webp"
-          alt=""
-          />
-          </Link>
+      <div className="card-cursos" onClick={navigateToPlanos}>
+        <div className="section-preco">
+          <p>METODOLOGIA TECH</p>
+          <p className="text-preco">R$ 397,00</p> 
+        </div>
+          <p>TRANSFORME SUA ENTREVIA EM CONTRATO</p>
+          <small>ASSISTA AGORA</small>
       </div>
       <div className="card-cursos">
-        <img
-          src="https://nwbcompany.com.br/wp-content/uploads/2024/07/1-Banner-Sessao-EstrategicaResultado.webp"
-          alt=""
-        />
+      <div className="section-preco">
+          <p>NEGOCIAÇÃO COM DIFERENTES PERFIS</p>
+          <p className="text-preco">R$ 397,00</p> 
+        </div>
+          <p>SE RELACIONAR É PARA POUCOS, MAS OS RESULTADOS SÃO GIGANTES</p>
+          <small>ASSISTA AGORA</small>
+      </div>
+
+      <div className="card-cursos">
+      <div className="section-preco">
+          <p>MENTORIA ON-LINE COLETIVA</p>
+          <p className="text-preco">R$ 597,00</p> 
+        </div>
+          <ul>
+            <li>GRUPO DE ATÉ 5 PESSOAS</li>
+            <li>1 MÊS</li>
+            <li>400 MIN DE MENTORIA</li>
+          </ul>
+          <small>GARANTIR MINHA VAGA</small>
       </div>
       <div className="card-cursos">
-        <img
-          src="https://nwbcompany.com.br/wp-content/webp-express/webp-images/uploads/2024/09/LINK-BIO-EMPRESA-LUCRATIVA.png.webp"
-          alt=""
-        />
+      <div className="section-preco">
+          <p>MENTORIA PERSONALIZADA</p>
+          <p className="text-preco">R$ 1.500,00</p> 
+        </div>
+          <ul>
+            <li>SESSÕES ESTRATÉGICAS</li>
+            <li>3 MESES</li>
+            <li>1H 30MIN POR MÊS</li>
+          </ul>
+          <small>CONTRATE AGORA</small>
       </div>
       <div className="card-cursos">
-        <img
-          src="https://nwbcompany.com.br/wp-content/uploads/2024/07/4-Banner-Youtube-2Resultado.webp"
-          alt=""
-        />
+      <div className="section-preco">
+          <p>TRANSFORME SEU CURRÍCULO</p>
+          <p className="text-preco">R$ 60,00</p> 
+        </div>
+          <p>ANÁLISE E COMENTÁRIOS DO LINKEDIN DO CV</p>
+          <small>CONTRATE AGORA</small>
+      </div>
+      <div className="card-cursos">
+          <p>CONTRATE UMA PALESTRA COM BETO REIS</p>
+          <small>ENTRE EM CONTATO</small>
+      </div>
+      <div className="card-cursos">
+      <div className="section-preco">
+          <p>EBOOK</p>
+          <p className="text-preco">R$ 40,00</p> 
+        </div>
+          <p>O ACESSO SÃO PARA TODOS, MAS OS FRUTOS SÃO GIGANTES</p>
+          <small>COMPRE AGORA</small>
       </div>
     </div>
   );

@@ -49,8 +49,12 @@
 
 .card-cursos {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     max-width: 90%;
+    background-color: #fff;
+    /* height: 150px; */
+    padding: 10px 0;
+    width: 90%; 
     border: 2px solid var(--secondary-color);   
     margin-top: 2rem; 
     border-radius: 20px;
@@ -60,9 +64,34 @@
     &:hover {
         transform: scale(1.05);
     }
-    
-    img {
-        max-width: 100%;
-        border-radius: 1rem;
+
+    p {
+        color: var(--black);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .text-preco {
+        color: green;
+        font-weight: bold;
+    }
+
+    small {
+        color: var(--secondary-color);
+        font-size: 0.8rem;
+        text-align: end;
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+
+    li {
+        font-weight: bold;
     }
 }
+
+.section-preco {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 1rem;
+}
+

@@ -1,20 +1,26 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { IoArrowBackSharp } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 import "./style.css";
 
 export default function PlanosBetao() {
+  const navigate = useNavigate();
+
+  const navigateToHome = () => {
+    navigate('/'); 
+  };
+
   return (
     <div className="container">
       <div className="header-planos"> 
-      <Link to="/">
           <IoArrowBackSharp
             color="#fff"
             size={20}
-            style={{ position: "absolute", left: "12px", top: "15px" }}
+            style={{ position: "absolute", left: "12px" }}
+            onClick={navigateToHome}
           />
-        </Link>
         <h3>Planos disponíveis</h3>
       </div>
       {/* <div className="background-img" /> */}
