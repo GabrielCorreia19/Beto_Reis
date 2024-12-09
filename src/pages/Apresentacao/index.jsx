@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { MdVerified } from "react-icons/md";
 import "./style.css";
 
 export default function Apresentacao() {

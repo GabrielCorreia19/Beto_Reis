@@ -8,7 +8,7 @@ export default function PlanosBetao() {
   const navigate = useNavigate();
 
   const navigateToHome = () => {
-    navigate('/home'); 
+    navigate('/'); 
   };
 
   return (
@@ -17,7 +17,7 @@ export default function PlanosBetao() {
           <IoArrowBackSharp
             color="#fff"
             size={20}
-            style={{ position: "absolute", left: "12px" }}
+            style={{ position: "absolute", left: "12px", cursor: "pointer" }}
             onClick={navigateToHome}
           />
         <h3>Planos disponíveis</h3>
