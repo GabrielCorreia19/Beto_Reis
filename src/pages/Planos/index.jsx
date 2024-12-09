@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { IoArrowBackSharp } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ export default function PlanosBetao() {
   const navigate = useNavigate();
 
   const navigateToHome = () => {
-    navigate('/'); 
+    navigate('/home'); 
   };
 
   return (
