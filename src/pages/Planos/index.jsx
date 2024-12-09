@@ -27,6 +27,13 @@ export default function PlanosBetao() {
           parceiras no último ano.
         </p>
       </div>
+      <div className="form-planos">
+        <input type="text" placeholder="Nome" />
+        <input type="text" placeholder="Email" /> 
+        <input type="text" placeholder="CPF" /> 
+        <input type="text" placeholder="DDD + WhatsApp" /> 
+        <button type="submit">CADASTRAR</button>
+      </div>
     </div>
   );
 }
