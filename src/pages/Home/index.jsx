@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./style.css";
 import { MdVerified } from "react-icons/md";
+import { Link } from 'react-router-dom';
+
 
 
 export default function Home() {
@@ -17,15 +19,17 @@ export default function Home() {
         <h3>Beto Reis</h3>
         <span>@_obetoreis</span>
         </div>
-        <MdVerified color="blue" size={'20'}/>
+        <MdVerified color="#fff" size={'20'}/>
 
       </div>
 
       <div className="card-cursos">
+        <Link to="/planos">
         <img
           src="https://nwbcompany.com.br/wp-content/webp-express/webp-images/uploads/2024/09/LINK-BIO-NWB-OPEN-HOUSE.png.webp"
           alt=""
-        />
+          />
+          </Link>
       </div>
       <div className="card-cursos">
         <img

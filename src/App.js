@@ -1,8 +1,8 @@
 import "./App.css";
-import Home from "./pages/Home/index.tsx";
+import AppRoutes from "./configs/router";
 
 function App() {
-  return <Home />;
+   return <AppRoutes />;
 }
 
 export default App;
