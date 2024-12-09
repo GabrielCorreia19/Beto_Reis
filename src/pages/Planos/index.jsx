@@ -1,12 +1,21 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { IoArrowBackSharp } from "react-icons/io5";
+
 import "./style.css";
 
 export default function PlanosBetao() {
   return (
     <div className="container">
-      <div className="header-planos">
-        <h2>Planos disponíveis</h2>
+      <div className="header-planos"> 
+      <Link to="/">
+          <IoArrowBackSharp
+            color="#fff"
+            size={20}
+            style={{ position: "absolute", left: "12px", top: "15px" }}
+          />
+        </Link>
+        <h3>Planos disponíveis</h3>
       </div>
       {/* <div className="background-img" /> */}
       <div className="info-text">
