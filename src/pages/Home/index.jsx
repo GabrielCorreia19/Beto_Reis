@@ -25,9 +25,7 @@ export default function Home() {
         <span>@_obetoreis</span>
         </div>
         <MdVerified color="#fff" size={'20'}/>
-
       </div>
-
       <div className="card-cursos" onClick={navigateToPlanos}>
         <div className="section-preco">
           <p>METODOLOGIA TECH</p>
