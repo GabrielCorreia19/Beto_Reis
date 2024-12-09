@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #14213d;
+    background-color: var(--primary-color);
     padding-bottom: 2rem;
     /* height: 100vh;
     width: 100vw; */
@@ -18,7 +18,7 @@
 
     .section-img {
         width: 100px;
-        border: 1px solid #c9a227;
+        border: 1px solid var(--secondary-color);
         border-radius: 50%;
 
         img {
@@ -34,7 +34,7 @@
     flex-direction: column;
 
     h3 {
-        color: #fff;
+        color: var(--text-color);
         height: 5px
     }
 
@@ -51,7 +51,7 @@
     display: flex;
     justify-content: center;
     max-width: 90%;
-    border: 2px solid #c9a227;   
+    border: 2px solid var(--secondary-color);   
     margin-top: 2rem; 
     border-radius: 20px;
     cursor: pointer;
